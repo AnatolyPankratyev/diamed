@@ -12,9 +12,9 @@
       background-image: none; } }
 
 .diagnostic__main .diagnostic-main-bg-3 {
-  background-image: url("../img/d-bg-main-3.png");
+  background-image: url("../img/diagnostic-main-bg.png");
   background-repeat: no-repeat;
-  background-position: 75% 50%; }
+  background-position: 20% 50%; }
   @media (min-width: 1440px) {
     .diagnostic__main .diagnostic-main-bg-3 {
       background-size: 50%; } }
@@ -108,63 +108,3 @@
     .diagnostic__erbilight .col-xl-9 p span {
       border: 1px solid #ffffff;
       padding: 5px 20px; }
-
-.diagnostic__lazer .lazer__title {
-  padding: 60px 0 35px; }
-  .diagnostic__lazer .lazer__title .lazer__title-before {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .diagnostic__lazer .lazer__title .lazer__title-before .title-before__line {
-      background-color: #b20f10;
-      height: 2px;
-      width: 40px;
-      margin-right: 5px; }
-    .diagnostic__lazer .lazer__title .lazer__title-before span {
-      color: #192837;
-      text-transform: uppercase;
-      font-weight: 300; }
-  .diagnostic__lazer .lazer__title h3 {
-    color: #2b4258;
-    font-size: 50px;
-    max-width: 300px; }
-
-.diagnostic__lazer .lazer__equipment h6 {
-  text-align: center;
-  margin-top: 20px;
-  font-weight: 700;
-  color: #2b4258; }
-
-.diagnostic__lazer .lazer__equipment p {
-  text-align: center;
-  font-weight: 300;
-  color: #2b4258; }
-
-.diagnostic__lazer .lazer__equipment .lazer__img-blue {
-  background-color: #14426e; }
-
-.diagnostic__lazer .lazer__equipment .lazer__img-red {
-  background-color: #b20f10; }
-
-.diagnostic__lazer .lazer__equipment .lazer__bg-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.diagnostic__lazer .lazer__equipment .lazer__img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  padding-top: 10px;
-  padding-left: 10px; }
-  .diagnostic__lazer .lazer__equipment .lazer__img img {
-    width: 100%; }

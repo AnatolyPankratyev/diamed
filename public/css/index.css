@@ -261,7 +261,10 @@
       .index__price .price__cards .price__card .card__title h5 {
         color: #b20f10;
         font-size: 18px;
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        max-width: 400px; }
+      .index__price .price__cards .price__card .card__title p {
+        min-height: 48px; }
     .index__price .price__cards .price__card .card__options {
       margin-top: 20px;
       padding: 0 25px 0 50px;
