@@ -12,7 +12,7 @@
       background-image: none; } }
 
 .express__main .express-main-bg-3 {
-  background-image: url("../img/d-bg-main-3.png");
+  background-image: url("../img/e-ret-main.png");
   background-repeat: no-repeat;
   background-position: 75% 50%; }
   @media (min-width: 1440px) {
@@ -36,49 +36,12 @@
     .express__main .express-main-bg-4 {
       background-image: none; } }
 
-.express__main .express-main-bg-5:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  min-height: 1200px;
+.express__main .express-main-bg-5 {
   background-image: url("../img/d-bg-main-5.png");
   background-repeat: no-repeat;
-  background-position: 52% 60%;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: rotate-1;
-          animation-name: rotate-1;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear; }
-
-@-webkit-keyframes rotate-1 {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  50% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg); }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); } }
-
-@keyframes rotate-1 {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  50% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg); }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); } }
+  background-position: 52% 60%; }
   @media (max-width: 992px) {
-    .express__main .express-main-bg-5:after {
+    .express__main .express-main-bg-5 {
       background-image: none; } }
 
 .express__main .express-main-bg-6 {
@@ -146,8 +109,17 @@
       .express__erbilight .col-xl-9 p {
         font-size: 16px; } }
     .express__erbilight .col-xl-9 p span {
-      border: 1px solid #ffffff;
-      padding: 5px 20px; }
+      cursor: pointer;
+      border: 1px solid #7fa1c2;
+      padding: 5px 5px; }
+      @media (min-width: 576px) {
+        .express__erbilight .col-xl-9 p span {
+          margin-left: 10px; } }
+      .express__erbilight .col-xl-9 p span:hover {
+        background-color: #7fa1c2; }
+
+.express__price .col-md-6 {
+  margin-top: 30px; }
 
 @media (max-width: 576px) {
   .express__price .card__options {
@@ -240,3 +212,30 @@
         -ms-flex-align: center;
             align-items: center;
     font-weight: 700; }
+
+#erilightModal .modal-body {
+  padding: 15px 35px; }
+
+#erilightModal h5 {
+  text-align: left;
+  color: #14426e;
+  font-weight: 500; }
+
+#erilightModal img {
+  width: 100%; }
+
+@media (max-width: 992px) {
+  #erilightModal img {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0; } }
+
+#erilightModal p {
+  margin-top: 15px; }
+
+#erilightModal .modal--list {
+  margin-top: 25px; }
+  #erilightModal .modal--list ul {
+    list-style: url("../img/li-lazer-light.png"); }
+    #erilightModal .modal--list ul li {
+      padding-left: 10px; }
