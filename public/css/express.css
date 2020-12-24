@@ -1,3 +1,31 @@
+@-webkit-keyframes sheen-e {
+  0% {
+    -webkit-transform: skewX(-45deg) translateX(0);
+            transform: skewX(-45deg) translateX(0); }
+  20% {
+    -webkit-transform: skewX(-45deg) translateX(2000px);
+            transform: skewX(-45deg) translateX(2000px); }
+  40% {
+    -webkit-transform: skewX(-45deg) translateX(0);
+            transform: skewX(-45deg) translateX(0); }
+  100% {
+    -webkit-transform: skewX(-45deg) translateX(0);
+            transform: skewX(-45deg) translateX(0); } }
+
+@keyframes sheen-e {
+  0% {
+    -webkit-transform: skewX(-45deg) translateX(0);
+            transform: skewX(-45deg) translateX(0); }
+  20% {
+    -webkit-transform: skewX(-45deg) translateX(2000px);
+            transform: skewX(-45deg) translateX(2000px); }
+  40% {
+    -webkit-transform: skewX(-45deg) translateX(0);
+            transform: skewX(-45deg) translateX(0); }
+  100% {
+    -webkit-transform: skewX(-45deg) translateX(0);
+            transform: skewX(-45deg) translateX(0); } }
+
 .express__main .express-main-bg-1 {
   background-image: url("../img/d-main-bg-1.png");
   background-repeat: no-repeat;
@@ -20,7 +48,7 @@
       background-size: 50%; } }
   @media (min-width: 1600px) {
     .express__main .express-main-bg-3 {
-      background-size: 40%; } }
+      background-size: 38%; } }
   @media (max-width: 1200px) {
     .express__main .express-main-bg-3 {
       background-size: 60%; } }
@@ -31,17 +59,80 @@
 .express__main .express-main-bg-4 {
   background-image: url("../img/d-bg-main-4.png");
   background-repeat: no-repeat;
-  background-position: 70% 50%; }
+  background-position: 70% 50%;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .express__main .express-main-bg-4:before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 100%;
+    width: 150px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-name: sheen-e;
+            animation-name: sheen-e;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
   @media (max-width: 992px) {
     .express__main .express-main-bg-4 {
       background-image: none; } }
 
-.express__main .express-main-bg-5 {
+@media (max-width: 992px) {
+  .express__main .express-main-bg-5 {
+    background-image: none; } }
+
+.express__main .express-main-bg-5:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 1200px;
   background-image: url("../img/d-bg-main-5.png");
   background-repeat: no-repeat;
-  background-position: 52% 60%; }
+  background-position: 60% 30%;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: rotate-1;
+          animation-name: rotate-1;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+@-webkit-keyframes rotate-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes rotate-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
   @media (max-width: 992px) {
-    .express__main .express-main-bg-5 {
+    .express__main .express-main-bg-5:after {
       background-image: none; } }
 
 .express__main .express-main-bg-6 {

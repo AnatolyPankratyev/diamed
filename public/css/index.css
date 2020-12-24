@@ -148,11 +148,19 @@
   margin-top: 85px;
   background-image: url("../img/bg-check.png");
   background-repeat: no-repeat;
-  background-size: 48%;
   background-position: 0 50%; }
   @media (max-width: 1440px) {
     .index__check {
       margin-top: 0; } }
+  @media (min-width: 992px) {
+    .index__check {
+      background-size: 50%; } }
+  @media (min-width: 1440px) {
+    .index__check {
+      background-size: 46%; } }
+  @media (min-width: 1600px) {
+    .index__check {
+      background-size: 40%; } }
   @media (max-width: 992px) {
     .index__check {
       background-image: none; } }
